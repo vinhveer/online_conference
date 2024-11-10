@@ -15,7 +15,7 @@ window.onload = () => {
 
 var peer = new Peer(undefined, {
     path: "/peerjs",
-    host: "/", 
+    host: "https://online-conference-307675718d60.herokuapp.com/", 
     secure: true, // Đảm bảo kết nối bảo mật HTTPS
     port: location.protocol === "https:" ? 443 : 3030, // Tự động chọn 443 khi chạy trên Heroku
 });
