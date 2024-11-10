@@ -1,4 +1,4 @@
-const socket = io("https://online-conference-307675718d60.herokuapp.com");
+const socket = io("/");
 const main__chat__window = document.getElementById("main__chat_window");
 const videoGrids = document.getElementById("video-grids");
 const myVideo = document.createElement("video");
@@ -15,9 +15,8 @@ window.onload = () => {
 
 var peer = new Peer(undefined, {
     path: "/peerjs",
-    host: "https://online-conference-307675718d60.herokuapp.com", 
-    secure: true, // Đảm bảo kết nối bảo mật HTTPS
-    port: location.protocol === "https:" ? 443 : 3030, // Tự động chọn 443 khi chạy trên Heroku
+    host: "/",
+    port: "3030",
 });
 
 let myVideoStream;
@@ -118,9 +117,8 @@ const cancel = () => {
 
 const copy = async() => {
     const roomid = document.getElementById("roomid").innerText;
-    await navigator.clipboard.writeText("https://online-conference-307675718d60.herokuapp.com/join/" + roomid);
+    await navigator.clipboard.writeText("http://localhost:3030/join/" + roomid);
 };
-
 const invitebox = () => {
     $("#getCodeModal").modal("show");
 };

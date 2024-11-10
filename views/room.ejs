@@ -6,19 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuộc họp</title>
+    <link rel="stylesheet" href="http://localhost:3030/public/styles.css">
     <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.3.1/peerjs.min.js.map"></script>
     <script src="/socket.io/socket.io.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://online-conference-307675718d60.herokuapp.com/public/styles.css">
-    <script src="https://online-conference-307675718d60.herokuapp.com/public/main.js"></script>
-
     <script>
         const myname = "<%= Myname %>"
         const roomId = "<%= roomid %>"
@@ -59,22 +55,22 @@
                         <i class="fas fa-user-plus"></i>
                         <span>Thông tin cuộc họp</span>
                     </button>
-
+                    
                     <button class="btn btn-outline-secondary me-3" onclick="showchat()">
                         <i class="fas fa-comment-alt"></i>
                         <span>Nhắn tin</span>
-                    </button>
+                    </button>                    
                 </div>
                 <div class="main_controls_block">
                     <button class="btn btn-danger">
                         <a href="/" class="text-white text-decoration-none">Rời khỏi cuộc họp</a>
-                    </button>
+                    </button>                    
                 </div>
             </div>
         </div>
         <div class="main_right" id="chat">
             <div class="main_right_header mt-2">
-                <h5 class="p-2">Nhắn tin</h5>
+                <h5 class="p-3">Nhắn tin</h5>
             </div>
             <div class="main__chat_window" id="main__chat_window">
                 <ul class="messages" id="messageadd">
@@ -84,7 +80,7 @@
                 <div class="main__message_container">
                     <input class="form-control" type="text" id="chat_message" onkeydown="sendmessage(this)"
                         placeholder="Nhập tin nhắn ..." aria-label="Chat message" />
-                </div>
+                </div>                
             </div>
         </div>
     </div>
@@ -94,6 +90,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="http://localhost:3030/public/main.js"></script>
 </body>
 
 </html>

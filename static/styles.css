@@ -115,14 +115,6 @@ video {
     display: flex;
 }
 
-.main__message_container input {
-    flex-grow: 1;
-    background-color: transparent;
-    color: white;
-    border: none;
-    outline: none
-}
-
 .main__chat_window {
     flex-grow: 1;
     overflow-y: auto;
