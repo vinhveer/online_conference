@@ -1,4 +1,4 @@
-const socket = io("/");
+const socket = io("https://online-conference-307675718d60.herokuapp.com/");
 const main__chat__window = document.getElementById("main__chat_window");
 const videoGrids = document.getElementById("video-grids");
 const myVideo = document.createElement("video");
