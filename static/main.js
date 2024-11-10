@@ -15,7 +15,7 @@ window.onload = () => {
 
 var peer = new Peer(undefined, {
     path: "/peerjs",
-    host: "online-conference-307675718d60.herokuapp.com", // Change if local
+    host: "https://online-conference-307675718d60.herokuapp.com/",
     port: "3030",
 });
 
@@ -117,7 +117,7 @@ const cancel = () => {
 
 const copy = async() => {
     const roomid = document.getElementById("roomid").innerText;
-    await navigator.clipboard.writeText("https://online-conference-307675718d60.herokuapp.com/join/" + roomid);
+    await navigator.clipboard.writeText("http://localhost:3030/join/" + roomid);
 };
 const invitebox = () => {
     $("#getCodeModal").modal("show");
