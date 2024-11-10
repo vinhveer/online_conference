@@ -15,7 +15,7 @@ window.onload = () => {
 
 var peer = new Peer(undefined, {
     path: "/peerjs",
-    host: "/",
+    host: "online-conference-307675718d60.herokuapp.com",
     port: "3030",
 });
 
